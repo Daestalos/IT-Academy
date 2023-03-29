@@ -25,6 +25,7 @@ let numbers = [];
 
 for (i=0; i<3; i++){
    let answer = +prompt('Введите любое случайное число');
+   console.log(answer);
    numbers.push(answer);
 }
 
