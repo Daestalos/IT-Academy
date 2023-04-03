@@ -51,29 +51,26 @@ numInStr(["this is a test", "test1"]) ➞ ["test1"]
 
 function numInStr(array) {
     let numberInArray = [];
-    array.forEach((element, i) => {
-      console.log(element.split().filter(item => {
-        if (!isNaN(parseInt(item))){
-          return item;
-        }
-      }))
-    });
 
+    
+    array.map(item => item.split('').some( srt => {
+      if (!isNaN(parseInt(srt))) {
+        numberInArray.push(item);
+        return true;
+      }
+      
+    }))
+    
+    return numberInArray
 }
+
+
+
 
 console.log(numInStr(["1a", "a", "2b", "b"]));
 console.log(numInStr(["abc", "abc10"]));
 console.log(numInStr(["abc", "ab10c", "a10bc", "bcd"]));
 console.log(numInStr(["this is a test", "test1"]));
-
-
-console.log( isNaN(parseInt('1')) );
-console.log(+'a');
-console.log(typeof(+'1') === 'number');
-console.log(typeof(+'a') === 'number');
-console.log(typeof(NaN));
-console.log(Number('1'));
-
 
  /*  3.  Создайте функцию, которая принимает массив с объектами и возвращает сумму бюджетов людей.
 
@@ -148,7 +145,7 @@ longestStreak([
 */
 
 function longestStreak(array){
-
+    let max = 0;
 }
 
 
@@ -172,4 +169,19 @@ function longestStreak(array){
     findNemo("I Nemo am") ➞ "Я нашел Nemo в 2!" */
 
 
+function findNemo(str){
+    let text = str.split(' ');
 
+    for (let i = 0; i < text.length; i++) {
+        if (text[i].includes('Nemo')) {
+          return `Я нашел Nemo в ${++i}!`
+        }
+        
+    }
+    return `Я не могу найти Nemo :(`
+}
+
+console.log(findNemo("I am finding Nemo !"));
+console.log(findNemo("Nemo is me"));
+console.log(findNemo("I Nemo am"));
+console.log(findNemo("Его не найти...."));
