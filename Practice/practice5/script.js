@@ -15,17 +15,15 @@ s - секунды
 
 
 function longTime(h, m, s){
-    let transformH = h * 3600;
-    let transformM = m * 60;
-    let maxResult = Math.max(transformH, transformM, s);
+    let hour = h * 3600;
+    let minuts = m * 60;
 
-    if(maxResult === transformH){
-        return h;
-    } else if(maxResult === transformM){
-        return m;
-    } else if (maxResult === s){
-        return s;
-    }
+    if (hour > s && hour > minuts){
+        return h
+    } else if (minuts > hour && minuts > s) {
+        return m
+    } else return s
+
 };
 console.log(longTime(1, 59, 3598));
 console.log(longTime(2, 300, 15000));
@@ -47,12 +45,7 @@ console.log(longTime(15, 955, 59400));
 function isFriday13(month, year){
     let day = new Date(year, month - 1, 13);
     let isFriday = day.getDay();
-    if(isFriday === 5){
-        return true;
-    } else {
-        return false;
-    }
-    // return isFriday === 5
+    return isFriday === 5
 }
 
 console.log(isFriday13(3, 2020));
