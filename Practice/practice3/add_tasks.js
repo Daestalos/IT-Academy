@@ -139,14 +139,48 @@ longestStreak([
   }
 ]) ➞ 3
 
-
+ 
 Пустой массив должен возвращать 0.
 
 */
 
 function longestStreak(array){
-    let max = 0;
+    let counter = 0, min = array[0].date.slice(-2), max = 0;
+    array.map( item => {
+      let day = item.date.slice(-2)
+      if (day > max) max = day
+      if (day < min) min = day
+    })
+
+    for (let i = 0; min < max; min++){
+        if (array[i].date.slice(-2) == min) {
+          counter++
+        } else break;
+        i++ 
+    }
+    return counter
 }
+
+console.log(longestStreak([
+  {
+    "date": "2021-04-18"
+  },
+  {
+    "date": "2021-04-19"
+  },
+  {
+    "date": "2021-04-20"
+  },
+  {
+    "date": "2021-04-26"
+  },
+  {
+    "date": "2021-04-27"
+  },
+  {
+    "date": "2021-04-30"
+  }
+]));
 
 
 
