@@ -59,7 +59,7 @@ console.log(isAvgWhole([9, 2, 2, 5]));
 function getOnlyEvens(arr){
     let averageArr = [];
     for (let i = 0; i < arr.length; i++){
-       if( i % 2 == 0 && arr[i] % 2 == 0 ) averageArr.push(arr[i]) 
+       if( i % 2 === 0 && arr[i] % 2 === 0 ) averageArr.push(arr[i]) 
     }
     return averageArr;
 }

@@ -88,4 +88,4 @@ matchDifference({ wins: 10, losing: 10 })
 
 
 
-
+console.log((true+true) * (true+true) - true);
