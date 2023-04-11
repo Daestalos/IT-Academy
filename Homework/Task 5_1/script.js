@@ -7,7 +7,7 @@
 // reorderNums ([1, 2, 3, 4], "desc") ➞ [1, 2, 3, 4]
 
 function reorderNums(arr, order){
-    return arr.map( item => item.toString().split('').sort( (a,b) => order === 'asc' ? a - b : b - a).join('')).map(item => parseFloat(item))
+    return arr.map( item => parseFloat(item.toString().split('').sort( (a,b) => order === 'asc' ? a - b : b - a).join('')))
 }
 
 console.log(reorderNums([515, 341, 98, 44, 211], "asc"));
@@ -57,9 +57,11 @@ console.log(isAvgWhole([9, 2, 2, 5]));
 // getOnlyEvens([1, 2, 3, 4, 5]) ➞ []
 
 function getOnlyEvens(arr){
+    let averageArr = [];
     for (let i = 0; i < arr.length; i++){
-        i % 
+       if( i % 2 == 0 && arr[i] % 2 == 0 ) averageArr.push(arr[i]) 
     }
+    return averageArr;
 }
 
 console.log(getOnlyEvens([1, 3, 2, 6, 4, 8]));
