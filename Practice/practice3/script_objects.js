@@ -80,12 +80,3 @@ function matchDifference(obj){
 matchDifference({ wins: 12, losing: 8 })
 matchDifference({ wins: 7, losing: 13 })
 matchDifference({ wins: 10, losing: 10 })
-
-
-
-
-
-
-
-
-console.log((true+true) * (true+true) - true);

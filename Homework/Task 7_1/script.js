@@ -5,16 +5,36 @@
 // ●	с использованием метода массива filter,
 // ●	с использованием метода массива reduce.
 
+
+
 function getWordForEach(){
-    const rusLetter = ["а", "о", "и", "ы", "у", "э"]
-    let word = prompt('Задайте слово на проверку'), count = 0
+    let word = prompt('Задайте слово на проверку ForEach'), count = 0
     word.split('').forEach(item => {
-        if( rusLetter.indexOf(item.toLowerCase())) count++
+        if( rusLetter.indexOf(item.toLowerCase()) != -1) count++
     }) 
     return `forEach ${count}`
+
+}
+
+function getWordFilter(){
+    let word = prompt('Задайте слово на проверку Filter')
+    let count = word.split('').filter(item => rusLetter.indexOf(item.toLowerCase()) != -1) 
+    return `Filter ${count.length}`
+}
+
+const rusLetter = ["а", "о", "и", "ы", "у", "э"]
+
+function getWordReduce(){
+    let word = prompt('Задайте слово на проверку Reduce')
+    return "Recude " + word.split('').reduce((sum, acc) => {
+        if (rusLetter.indexOf(acc.toLowerCase()) != -1) sum++ 
+        return sum
+    }, 0) 
 }
 
 console.log(getWordForEach());
+console.log(getWordFilter());
+console.log(getWordReduce());
 
 // 2.	У вас есть два массива. Один показывает имена людей, а другой показывает их род занятий. Ваша задача - создать объект, отображающий каждого человека по его роду занятий.
 // var names = ["Max", "Vera", "Joe", "Annette", "Sussan"]
