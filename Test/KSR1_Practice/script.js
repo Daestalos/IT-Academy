@@ -115,6 +115,7 @@ function freeShipping(obj){
     for (let key in obj){
         dilivery += obj[key]
     }
+
     return dilivery > 50 ? true : false
 }
 
