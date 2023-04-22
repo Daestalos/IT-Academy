@@ -110,43 +110,21 @@ console.log(magic.listSlice([1, 2, 3, 4, 5], [2, 4]));
 
 // u2.username ➞ "marysue1989"
 
-// u3.username ➞ "milan_rodrick"
+// u3.username ➞ "milan_rodrick
 
-function User(userName){
-  this.username = userName;
+class User{
+  constructor(name) {
+    this.name = name;
+    ++User.userCount;
+  }
 
-  this.count++;
+  static userCount = 0;
 }
 
-User.count = 0;
-User.userCount = function() {
-  console.log(this.count);
-}
-
-new User();
 
 u1 = new User("johnsmith10")
-console.log(User.userCount());
+console.log(User.userCount);
 u2 = new User("marysue1989")
-console.log(User.userCount());
-
-
-
-
-
-
-
-
-function makeCounter() {
-  let count = 0;
-
-  return function() {
-    return count++; 
-  }
-}
-
-let counter = makeCounter();
-
-console.log( counter() ); 
-console.log( counter() );
-console.log( counter() );
+console.log(User.userCount);
+u3 = new User("milan_rodrick")
+console.log(User.userCount);
