@@ -33,7 +33,7 @@ Yacht.prototype.constructor = Yacht;
 
 let inflatableBoat1 = new InflatableBoat(50, 50, 10, 10, 2, 'Беларусь', true)
 let boat1 = new Boat(120, 200, 50, 190, 4, 'Беларусь', true, '10 лет')
-let yacht1 = new Yacht(300, 300, 200, 300, 20, 'Беларусь', true)
+let yacht1 = new Yacht(300, 300, 200, 300, 'Беларусь', true)
 
 console.log(inflatableBoat1.getBoatInfo()); // Длинна: 50, Ширина: 50, Вес: 10
 console.log(boat1.getBoatInfo()); // Длинна: 120, Ширина: 200, Вес: 50
