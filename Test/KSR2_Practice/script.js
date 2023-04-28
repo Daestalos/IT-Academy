@@ -40,6 +40,4 @@ console.log(boat1.getBoatInfo()); // Длинна: 120, Ширина: 200, Ве�
 console.log(yacht1.getBoatInfo()); // Длинна: 300, Ширина: 300, Вес: 200
 
 console.log(inflatableBoat1.getBoatCarrying()); // 10
-console.log(boat1.getBoatCarrying()); // 190
-console.log(yacht1.getBoatCarrying()); // Данная грузоподъемность не соответствует лодке
 
