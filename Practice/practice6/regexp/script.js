@@ -7,15 +7,13 @@ let re2 = /температура (воздуха)/i;
 let found = str.match(re);
 let found2 = str.match(re2);
  
- 
 console.log(found);
 console.log(found2);
-
 
 // match /g
 
 let str3 = 'При создании генератора мы использовали небезизвестный универсальный код речей.';
- //console.log(str3.match(/использовали (небезизвестный)/g)); 
+ console.log(str3.match(/использовали (небезизвестный)/g)); 
 
 // match not found
 
@@ -34,15 +32,9 @@ console.log(b);
 
 //console.log('+375-33-999-99-99'.split('-'));
 
-
-
 let str7 = 'It iS a 5r&e@@t Day.'
 let array = str7.split(" ",2);
-
-//console.log(array);
-
-
-
+console.log(array);
 
 
 //** search */
@@ -50,14 +42,13 @@ let array = str7.split(" ",2);
 let str8 = "Hello World!";
 
 let regexp3 = /World.+/;
-
-//console.log( str8.search(regexp3) );
+console.log( str8.search(regexp3) );
 
 
 //** replace */
 
-//console.log('+375-33-999-99-99'.replace( "-", "--" ))
-//console.log('+375-33-999-99-99'.replace( /-/g, "--" ))
+console.log('+375-33-999-99-99'.replace( "-", "--" ))
+console.log('+375-33-999-99-99'.replace( /-/g, "--" ))
 
 
 //(Второй аргумент)
@@ -93,11 +84,6 @@ let result = str10.replace(/(\w+) (\w+)/,  function(match, name1, name2){
 //console.log(result); // Smith, John
 
 
-
-
-
-
-
 //** exec  */
 
 let str11 = 'Вы найдете информацию о методе exec https://exec.com';
@@ -106,12 +92,10 @@ let regexp4 = /exec/ig;
 let result2;
 
 while (result2 = regexp4.exec(str11)) {
-  //console.log( `Найдено ${result2[0]} на позиции ${result2.index}` );
+  console.log( `Найдено ${result2[0]} на позиции ${result2.index}` );
   // Найдено exec на позиции 31,
   // Найдено exec на позиции 44
 }
-
-
 
 
 let str12 = 'Hello, world!';
@@ -120,12 +104,7 @@ let strTest = 'world';
 let regexp5 = /\w+/y;
 regexp5.lastIndex = 5; // ищем ровно на 5-й позиции
 
-//console.log( regexp5.exec(str12) ); // null
-
-
-
-
-
+console.log( regexp5.exec(str12) ); // null
 
 
 //** test */
@@ -135,9 +114,6 @@ let str13 = "Регулярные выражения появились рань
 // эти два теста делают одно и же
 console.log( /выражения/i.test(str13) ); // true
 console.log( str13.search(/выражения/i) != -1 ); // true
-
- 
-
 
 
 /// Описание про флаги регулярных выражений https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp

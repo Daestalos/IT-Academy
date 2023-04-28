@@ -95,7 +95,9 @@ console.log(magic.strLength("hello world"));
 console.log(magic.trim("      javascript is awesome      "));
 console.log(magic.listSlice([1, 2, 3, 4, 5], [2, 4]));
 
-/*4.Создайте класс с именем User и создайте способ проверки количества созданных пользователей (количества экземпляров), чтобы значение можно было получить как атрибут класса.*/
+// 4.Создайте класс с именем User и создайте способ проверки количества
+// созданных пользователей (количества экземпляров),
+// чтобы значение можно было получить как атрибут класса.
 
 // u1 = new User("johnsmith10")
 // User.userCount ➞ 1
@@ -121,10 +123,9 @@ class User{
   static userCount = 0;
 }
 
-
 u1 = new User("johnsmith10")
-console.log(User.userCount);
+console.log(User.userCount); // 1
 u2 = new User("marysue1989")
-console.log(User.userCount);
+console.log(User.userCount); // 2
 u3 = new User("milan_rodrick")
-console.log(User.userCount);
+console.log(User.userCount); // 3

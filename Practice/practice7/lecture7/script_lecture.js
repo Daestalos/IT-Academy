@@ -17,32 +17,32 @@
 let exampleArr = [1,2,3,4,5];
 let newExampleArr = [];
 
-/* exampleArr.forEach(function(elem, index ){
+exampleArr.forEach(function(elem, index ){
     //console.log(elem);
    // console.log(index)
-}) */
+}) 
 
 // exampleArr.forEach(function(elem){
 //     newExampleArr.push(elem + 10);
 // })
 
-/* newExampleArr = exampleArr.forEach(function(elem){
+newExampleArr = exampleArr.forEach(function(elem){
     return elem;
-}) */
+})
 
-//console.log(newExampleArr);
+console.log(newExampleArr);
 
 
 
 // 2.map()
 
-/* newExampleArr = exampleArr.map(function(elem){
+newExampleArr = exampleArr.map(function(elem){
     return elem;
 })
 
 console.log(newExampleArr);
- */
-/* const info =[ 
+ 
+ const info =[ 
 {
     "id": 1,
     "age": 28,
@@ -64,20 +64,20 @@ exampleArr = info.map(function(elem){
         id: elem.id,
         phome: elem.phone
     }
-}) */
+})
 
-// console.log(exampleArr);
+console.log(exampleArr);
 
 
 // 3.filter();
 
-/* exampleArr = exampleArr.filter(function(elem){
+exampleArr = exampleArr.filter(function(elem){
     return (elem  > 3 || elem === 2)  ; // !(elem % 2)
-}) */
+}) 
 
-//console.log(exampleArr);
+console.log(exampleArr);
 
-/* const info =[ 
+const info1 =[ 
     {
         "id": 1,
         "age": 19,
@@ -94,54 +94,54 @@ exampleArr = info.map(function(elem){
         "phone": "+375291919191"
     }]
 
-    exampleArr = info.filter(function(elem){
-        return elem.age > 20;
-    })
+exampleArr = info1.filter(function(elem){
+    return elem.age > 20;
+})
 
-    console.log(exampleArr);
- */
+console.log(exampleArr);
+
 
 
 // 4. every(); some();
 
- let exampleArr1 = [1,2,3,4,5,-10,-1];
+let exampleArr1 = [1,2,3,4,5,-10,-1];
 
-/* exampleArr1 = exampleArr1.every(function(elem){
+exampleArr1 = exampleArr1.every(function(elem){
     return elem > -100;
 })
 
 console.log(exampleArr1);
- */
+ 
 
-// const info =[ 
-//     {
-//         "id": 1,
-//         "age": 19,
-//         "phone": "+375291919191"
-//     },
-//     {
-//         "id": 2,
-//         "age": 28,
-//         "phone": "+375291919191"
-//     },
-//     {
-//         "id": 3,
-//         "age": 24,
-//         "phone": ""
-//     }]
+const info2 =[ 
+    {
+        "id": 1,
+        "age": 19,
+        "phone": "+375291919191"
+    },
+    {
+        "id": 2,
+        "age": 28,
+        "phone": "+375291919191"
+    },
+    {
+        "id": 3,
+        "age": 24,
+        "phone": ""
+    }]
 
-//     exampleArr1 = info.every(function(elem){
-//         return elem.phone;
-//     })
+exampleArr1 = info2.every(function(elem){
+    return elem.phone;
+})
 
-//     console.log(exampleArr1);
+console.log(exampleArr1);
 
 
 
  //5. reduce(); reduceRight();
 
-/*  exampleArr1 = exampleArr1.reduceRight(function(sum, elem){
+exampleArr1 = exampleArr1.reduceRight(function(sum, elem){
      return sum += elem;
  }, 100)
 
- console.log(exampleArr1);  */
+ console.log(exampleArr1);
