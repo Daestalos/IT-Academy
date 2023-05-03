@@ -1,0 +1,43 @@
+.text{
+    color: blue;
+}
+
+.text-add{
+    font-size: 80px;
+}
+
+#counter-likes, #counter-dislikes{
+    display: inline-block;
+    margin: 50px 20px;
+    font-size: 28px;
+}  
+
+#like, #dislike{
+    padding: 20px;
+    border: 1px solid blue;
+    display: inline-block;
+    border-radius: 50%;
+    background: bisque;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#like:hover, #dislike:hover{
+    background-color: brown;
+    color:cornsilk;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box div{
+    margin: 20px;
+    padding: 50px;
+    border: 5px solid gold;
+    position: relative;
+}
+

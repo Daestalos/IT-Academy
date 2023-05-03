@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body> 
+
+    <!--------------Task1-------------->
+
+    <pre>Task 1. При нажатии на кнопку "Change color links" измените цвет текста всех ссылок.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <nav>
+                <div class="nav-wrapper" id="nav-menu">
+                    <div class="col s12">
+                        <a href="#!" class="breadcrumb breadcrumb_links">First</a>
+                        <a href="#!" class="breadcrumb breadcrumb_links">Second</a>
+                        <a href="#!" class="breadcrumb breadcrumb_links">Third</a>
+                    </div>
+                </div>
+            </nav>
+            <a class="waves-effect waves-light btn-small" onclick="ChangeColorLinks()">Change color links</a>
+        </div>
+    </div>
+
+
+    <!--------------Task2-------------->
+
+    <pre>Task 2. При нажатии на кнопку "change image" измените картинку карточки с photo1.jpg на photo2.jpg. При нажатии на кнопку "Initial image" верните назад картинку photo1.jpg в карточку.</pre>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card first_task">
+                <div class="card-image">
+                    <img src="images/photo1.jpg" id="current-img-change">
+                    <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn-small" onclick="ChangeImage()">Change image</a>
+                    <a class="waves-effect waves-light btn-small" onclick="InitialImage()">Initial image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Task3-------------->
+
+
+    <pre>Task 3. При нажатии на кнопку "Change title" измените название карточки с "Card Title" на "New Title".</pre>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card third_task">
+                <div class="card-image">
+                    <img src="images/photo1.jpg" id="current-img">
+                    <span class="card-title" id="card2-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn-small" onclick="ChangeTitle()">Change title</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------Task4-------------->
+
+    <pre>Task 4. При нажатии на кнопку "Add new link" добавьте новую ссылку в навигационное меню.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="col s12" id="list-links">
+                        <a href="#!" class="breadcrumb">First</a>
+                        <a href="#!" class="breadcrumb">Second</a>
+                        <a href="#!" class="breadcrumb">Third</a>
+                    </div>
+                </div>
+            </nav>
+            <a class="waves-effect waves-light btn-small" id="btn-new-link" onclick="addNewLink()"
+            >Add new link</a>
+        </div>
+    </div>
+
+    <!--------------Task5-------------->
+
+    <pre>Task 5. При нажатии на кнопку "Add new item" добавьте новую вкладку с любым названием.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="collection" id="collection-list">
+                <a href="#!" class="collection-item" id="test-child">Item 1</a>
+                <a href="#!" class="collection-item">Item 2</a>
+                <a href="#!" class="collection-item">Item 3</a>
+                <a href="#!" class="collection-item">Item 4</a>
+            </div>
+
+            <a class="waves-effect waves-light btn-small" id="btn-new-item" onclick="addNewItem()"
+            >Add new Item</a>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

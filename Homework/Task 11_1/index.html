@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+         
+ 
+        <div class="row">
+                <div class="col s12 m12">
+                        <div id="switcher">
+                          <img src="./images/sun.svg" alt="sun">
+                          <p id="change-switcher">Изменить тему</p>
+                        </div>
+
+
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/cat1.jpg" id="current-cat">
+                            <span class="card-title" id="current-title">Cat1</span>
+                          </div>
+                          <div class="card-content" id="current-content">
+                            <p>I am a beautiful cat №1</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#">cat1</a>
+                            <a href="#">cat2</a>
+                            <a href="#">cat3</a>
+                          </div>
+                        </div>
+
+                        <h1>Our cats</h1>
+
+                        <table>
+                          <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Country</th>
+                                <th>Year of birth</th>
+                            </tr>
+                          </thead>
+                  
+                          <tbody id="cat-info">
+                            <tr>
+                              <td>Alvin</td>
+                              <td>France</td>
+                              <td>2017</td>
+                            </tr>
+                            <tr>
+                              <td>Alan</td>
+                              <td>Turkey</td>
+                              <td>2018</td>
+                            </tr>
+                            <tr>
+                              <td>Jonathan</td>
+                              <td>Greece</td>
+                              <td>2015</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <a class="waves-effect waves-light btn">Add new cat</a>
+                      </div>
+
+                      
+         </div>
+        
+    
+    <script src="./script.js"></script>
+</body>
+</html>
