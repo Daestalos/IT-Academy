@@ -41,12 +41,7 @@ console.log(sortStr(["bike", "car", "motorcycle"], "camrb"));
 // revOddWord ("Dear Santa, give me a new iPhone”)➞ "Dear atnaS, give me a wen iPhone. " 
 
 function revOddWord(str){
-    return str.split(' ').map(item => {
-            if (item.match(/[\w\s]+/)[0].length % 2 !== 0 && !item.includes(',')) {
-                return item.split("").reverse().join("")
-            } else if (item.match(/[\w\s]+/)[0].length % 2 !== 0 && item.includes(',')) {
-                return item.match(/[\w\s]+/)[0].split("").reverse().join("") + ','
-            } else return item
+    return str.split(' ').map(item => item.replace(/\w+/gi, (word) => word.length % 2 !== 0 ? word.split('').reverse().join('') : word);
         }).join(" ")
 }
 
