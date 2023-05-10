@@ -34,14 +34,14 @@ addCat.addEventListener('click', () => {
 })
 
 changeTheme.addEventListener('click', () =>{
-    if (changeTheme.alt == 'sun'){
-        changeTheme.alt = 'moon'
+    if (changeThemeImg.alt == 'sun'){
+        changeThemeImg.alt = 'moon'
         changeThemeImg.src = `./images/moon.svg`
         changeThemeImg.style.background = 'white'
         document.body.style.background = 'black'
         document.body.style.color = 'white'
     } else {
-        changeTheme.alt = 'sun'
+        changeThemeImg.alt = 'sun'
         changeThemeImg.src = `./images/sun.svg`
         document.body.style.color = 'black'
         document.body.style.background = "white"
