@@ -1,0 +1,12 @@
+select{
+    display: block;
+}
+
+.item-buttons{
+    text-align: center;
+    margin: 10px;
+}
+
+body{
+    background: antiquewhite;
+}

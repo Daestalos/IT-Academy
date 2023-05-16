@@ -1,0 +1,90 @@
+.container1{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,100px);
+    /* grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 100px 100px 100px 100px 100px;
+     */grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+}  
+
+.container1 div{
+    background-color: antiquewhite;
+}
+
+.tree__films li{
+    padding-left: 30px;
+}
+
+pre{
+    font-size: 20px;
+    white-space: normal;
+}
+
+.todo__list li{
+    display: flex;
+}
+
+.todo__list .name{
+    color: blue;
+}
+
+.club-image img{
+    max-width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.input-field>label{
+    position: relative;
+}
+
+.first_task img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.blue_block{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+.red_block{
+    background-color: red;
+}
+
+#like-btn img{
+    max-width: 200px;
+    cursor: pointer;
+}
+
+#like-counter{
+    font-size: 32px;
+    color: blue;
+}
+
+/* input[type=text]:not(.browser-default).input_first{
+    background-color: burlywood;
+} */
+
+
+.modal_open{
+    display: block;
+    top: 150px;
+}
+
+.error-message,.error-message2, .error-message3, .error-message4  {
+    color: red;
+}
+
+.error-hide{
+    display: none;
+}
+
+select{
+    display: block;
+}

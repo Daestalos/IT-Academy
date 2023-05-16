@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body> 
+
+     <!--------------Task1-------------->
+
+     <pre>Task 1. При нажатии на кнопку "Add new link" добавьте новую ссылку в навигационное меню.</pre>
+
+     <div class="row">
+         <div class="col s12">
+             <nav>
+                 <div class="nav-wrapper">
+                     <div class="col s12" id="list-links">
+                         <a href="#!" class="breadcrumb">First</a>
+                         <a href="#!" class="breadcrumb">Second</a>
+                         <a href="#!" class="breadcrumb">Third</a>
+                     </div>
+                 </div>
+             </nav>
+             <a class="waves-effect waves-light btn-small" id="btn-new-link" 
+             >Add new link</a>
+         </div>
+     </div>
+ 
+     <!--------------Task2-------------->
+ 
+     <pre>Task 2. При нажатии на кнопку "Add new item" добавьте новую вкладку с любым названием.</pre>
+ 
+     <div class="row">
+         <div class="col s12">
+             <div class="collection" id="collection-list">
+                 <a href="#!" class="collection-item" id="test-child">Item 1</a>
+                 <a href="#!" class="collection-item">Item 2</a>
+                 <a href="#!" class="collection-item">Item 3</a>
+                 <a href="#!" class="collection-item">Item 4</a>
+             </div>
+ 
+             <a class="waves-effect waves-light btn-small" id="btn-new-item" onclick="addNewItem()" 
+             >Add new Item</a>
+         </div>
+     </div>
+ 
+     <!--------------Task3-------------->
+ 
+     <pre>Task 3. При нажатии на кнопку "Submit Name" проверьте поле input на наличие данных. Если input пустой, установить фокус элементу, и под input вывести сообщение "Введите данные. Данное поле не может быть пустым".</pre>
+ 
+     <div class="row">
+         <div class="col s12">
+             <form name="form1">
+                 <div class="first-name-element">
+                     <input type="text" placeholder="Name" name="firstName">
+                     <p class="error-message" style="color: red; display: none;">Введите данные. Данное поле не может быть пустым</p>
+                 </div>
+ 
+                 <div><a class="waves-effect waves-light btn" id="btn-submit-name">Submit Name</a></div>
+             </form>
+         </div>
+     </div>
+ 
+     <!--------------Task4-------------->
+ 
+     <pre>Task 4. При нажатии на кнопку "Submit Lastame" проверьте поле input на наличие данных. Если input пустой, установить фокус элементу, и под input вывести сообщение "Введите корректно данные. Lastname не может быть менее 3 букв.". Также добавьте border(рамку для инпута красного цвета).</pre>
+ 
+     <div class="row">
+         <div class="col s12">
+             <form name="form2">
+                 <div class="first-name-element">
+                     <input type="text" placeholder="Lastname" name="lastName">
+                     <p class="error-message-lastname" style="color: red; display: none;">Введите корректно данные. Lastname не может быть менее 3 букв.</p>
+                 </div>
+ 
+                 <div><a class="waves-effect waves-light btn" id="btn-submit-lastname">Submit Lastname</a></div>
+             </form>
+         </div>
+     </div>
+ 
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

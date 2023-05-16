@@ -10,4 +10,3 @@ console.log(spans);
 spans.forEach( (item) => {
     item.style.fontWeight = 'bold'
 })
-

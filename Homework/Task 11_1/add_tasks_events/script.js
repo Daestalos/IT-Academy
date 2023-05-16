@@ -4,11 +4,6 @@ const clubImage = document.querySelectorAll('.club-image > img'),
       arrowLeft = document.querySelector('#arrow-left'),
       card = document.querySelector('.card');
 
-const arr = document.getElementById('arrow-right');
-console.log(arr);
-
-
-
 
 // Task 1. Даны картинки. Привяжите к каждой картинке событие, чтобы при клике, картинка увеличивалась в размерах в 1.5 раза.
 

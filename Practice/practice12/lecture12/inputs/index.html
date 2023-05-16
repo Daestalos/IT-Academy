@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form name="userForm">
+                <div>
+                    <input type="text" placeholder="Name" name="firstName">
+                </div>
+                <div>
+                    <input type="text" placeholder="Last Name" name="lastName">
+                </div>
+                <div class="input-field col s12">
+                    <select name="currentOption">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <p>
+                    <label>
+                      <input type="checkbox" name="inputColors" checked/>
+                      <span>Red</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" name="inputColors"/>
+                      <span>Blue</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" name="inputColors"/>
+                      <span>Green</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" name="inputColors"/>
+                      <span>Gray</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" name="inputColors" value="10"/>
+                      <span>White</span>
+                    </label>
+                </p>
+                <div>
+                    <input type="text" placeholder="Age" name="userAge">
+                </div>
+
+                <div><a class="waves-effect waves-light btn">Отправить данные на сервер</a></div>
+                  
+            </form>
+        </div>
+    </div>
+
+    <!-- <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad repellat asperiores debitis architecto eveniet aperiam, amet odit reprehenderit incidunt rerum doloribus facilis suscipit. Sit praesentium, ea voluptatem eveniet tempore repudiandae, natus facilis quidem similique nam dicta optio eius, temporibus ducimus. Perspiciatis ad facere possimus, animi atque architecto tenetur iure velit odit consectetur reiciendis quo nihil delectus asperiores suscipit ipsam maxime quaerat dolorem provident, cumque quam, omnis libero. Fugit laboriosam perspiciatis, voluptas magni quasi facere corporis. Distinctio excepturi illo cumque et voluptas expedita aliquid cupiditate, similique laudantium esse, voluptate ullam asperiores delectus officiis ab ratione nulla quo nesciunt nemo vel.</div> -->
+
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="getForm()">Получить содержимое первого поля</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="setLastName()">Записать фамилию</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="getCurrentSelected()">Получить выбранный элемент</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="setCurrentSelected()">Установить последнее значение в select</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="getCheckbox()">Вывести список чекбоксов</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="setCheckBox()">Сделать выбранным четвертый чекбокс</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="setFocusElement()">Сделать активным input</a></div>
+    <div class="item-buttons"><a class="waves-effect waves-light btn" onclick="submitData()">Отправить данные</a></div>
+    <div class="item-buttons" onclick="resetData()"><a class="waves-effect waves-light btn">Очистить все поля</a></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

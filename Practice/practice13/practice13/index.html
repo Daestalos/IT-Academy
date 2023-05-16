@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body> 
+
+ 
+    <!--------------Task1-------------->
+
+    <pre>Task 1. При нажатии на кнопку "Submit Name" проверьте поле input на наличие данных. Если input пустой, установить фокус элементу, и под input вывести сообщение "Введите данные. Данное поле не может быть пустым".</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <form name="form1">
+                <div class="first-name-element">
+                    <input type="text" placeholder="Name" name="firstName">
+                    <p class="error-message" style="color: red; display: none;">Введите данные. Данное поле не может быть пустым</p>
+                </div>
+
+                <div><a class="waves-effect waves-light btn" id="btn-submit-name">Submit Name</a></div>
+            </form>
+        </div>
+    </div>
+
+    <!--------------Task2-------------->
+
+    <pre>Task 2. При нажатии на кнопку "Submit Lastame" проверьте поле input на наличие данных. Если input пустой, установить фокус элементу, и под input вывести сообщение "Введите корректно данные. Lastname не может быть менее 3 букв.". Также добавьте border(рамку для инпута красного цвета).</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <form name="form2">
+                <div class="first-name-element">
+                    <input type="text" placeholder="Lastname" name="lastName">
+                    <p class="error-message-lastname" style="color: red; display: none;">Введите корректно данные. Lastname не может быть менее 3 букв.</p>
+                </div>
+
+                <div><a class="waves-effect waves-light btn" id="btn-submit-lastname">Submit Lastname</a></div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--------------Task3-------------->
+
+    <pre>Task 3. При наведении на синий блок, измените его фон на красный.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="blue_block">
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------Task4-------------->
+
+    <pre>Task 4. При двойном нажатии на картинку-лайк, измените счетчик с 0 до 1. </pre>
+
+    <div class="row">
+        <div class="col s12">
+            <div id="like-btn">
+                <img src="./images/like.png" alt="like">
+            </div>
+            <div id="like-counter">0</div>
+           
+        </div>
+    </div>
+
+    <!--------------Task5-------------->
+
+    <pre>Task 5. При нажатии на кнопку клавишу enter добавьте содержимое инпута в таблицу.</pre>
+
+    <div class="row">
+        <div class="col s4">
+            <input placeholder="Input new name" id="first_name2" type="text" class="input_first">
+
+            <table class="striped" >
+                <thead>
+                  <tr>
+                      <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody id="name_list">
+                  <tr>
+                    <td>Alvin</td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <!--------------Task6-------------->
+
+    <pre>Task 6. При нажатии на кнопку "open info" откройте модальное окно, чтобы его открыть добавьте к элементу "div id="modal1""  класс под названием "modal_open". Когда модальное окно будет открыто, вам необходимо при нажатии на клавишу "Esc" скрыть модальное окно.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+
+              <a class="waves-effect waves-light btn" id="open-modal" >open info</a>
+
+        </div>
+    </div>
+
+    <!--------------Task7-------------->
+
+    <pre>Task 7. При регистрации введите логин. После ввода логина нажмите enter. Он обязательно должен состоять не менее чем из 4 символов.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <input placeholder="Input new name" id="first_login" type="text" class="input_first">
+            <p class="error-message">Необходимо ввести минимум 4 символа.</p>
+        </div>
+    </div>
+
+    <!--------------Task8-------------->
+
+    <pre>Task 8. При регистрации введите логин. После ввода логина нажмите enter. Обязательно первый символ должен быть заглавным.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <input placeholder="Input new name" id="first_login" type="text" class="input_first">
+            <p class="error-message2">Первая буква обязательно должна быть заглавной</p>
+        </div>
+    </div>
+
+    
+
+    <!--------------Task9-------------->
+
+    <pre>Task 9. Посчитайте суточную норму потребления воды для человека. Каждый 1кг веса равен 30мл воды. Выведите информацию под кнопкой "Calculate Water".</pre>
+
+
+
+    <div class="row">
+        <div class="col s12">
+            <input placeholder="Введите количество кг" id="first_kg" type="number" class="input_first">
+            <a class="waves-effect waves-light btn" id="calculate-water" >Calculate Water</a>
+            <p>Суточная норма для вас равна: <span id="final-calculate">0 мл</span></p>
+        </div>
+    </div>
+
+    <!--------------Task10-------------->
+
+    <pre>Task 10. Посчитайте зарплату для вашего работника. В первом input введите количество дней отработанных, во втором выберите его ставку в час. Рабочий день составляет 8 часов.</pre>
+
+
+
+    <div class="row">
+        <div class="col s12">
+            <input placeholder="Введите количество отработанных дней" id="first_days" type="number" class="input_first">
+            <select>
+                <option value="10">
+                    10
+                </option>
+                <option value="15">
+                    15
+                </option>
+                <option value="20">
+                    20
+                </option>
+            </select>
+            <a class="waves-effect waves-light btn" id="calculate-salary" >Calculate salary</a>
+            <p>Зарплата составляет: <span id="final-salary">0 $</span></p>
+        </div>
+    </div>
+
+
+    <!--------------Task11-------------->
+
+    <pre>Task 11. При регистрации введите логин. После ввода логина нажмите enter. Обязательно первый символ должен быть заглавным. Длина логина должна состоять не менее чем из 5 символов.</pre>
+
+    <div class="row">
+        <div class="col s12">
+            <input placeholder="Input new name" id="first_login" type="text" class="input_first">
+            <p class="error-message3">Первая буква обязательно должна быть заглавной</p>
+            <p class="error-message4">Необходимо ввести минимум 5 символов.</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
