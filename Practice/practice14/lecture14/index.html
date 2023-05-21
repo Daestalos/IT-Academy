@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+  
+<body>
+
+    <h2>Пример drag and drop</h2>
+
+    <div id="div1" ondragover="allowDrop(e)"></div>
+
+    <img id="drag1" draggable="true" ondragstart="drag(e)" ondrop="drop(e)" src="./img/checkmark.png" width="200" height="100">
+
+
+
+  
+
+
+    <div class="container">
+
+        <a id="linkToGoogle" href="google.com">to google</a>
+
+
+        <button id="btn-test">Click!</button>
+
+
+
+
+
+
+
+        <form name="form1">
+            <div>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName">
+            </div>
+            <div>
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="lName">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age">
+            </div>
+            <div>
+                <label for="aboutMe">About me</label>
+                <input type="text" name="aboutMe" id="aboutMe">
+            </div>
+            <div>
+                <label for="weight">About me</label>
+                <input type="number" name="weight" id="weight">
+            </div>
+
+            <button type="submit">Send info</button>
+        </form>
+
+
+
+
+
+    </div>
+    <script src="./script.js"></script>
+    <script src="./dragandrop.js"></script>
+</body>
+
+</html>
