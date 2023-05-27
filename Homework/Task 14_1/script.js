@@ -49,6 +49,7 @@ const photo = document.querySelector('.photo > img'),
       imageBtns = document.querySelectorAll('.image');
 
 // без делегирования
+
 // imageBtns.forEach(item => {
 //     item.addEventListener('click', () => {
 //         document.querySelector('.active-image').classList.remove('active-image')
@@ -63,7 +64,7 @@ const imageContainer = document.querySelector('.container');
 
 imageContainer.addEventListener('click', (e) => {
     let parrentDiv = e.target.closest('div')
-    
+
     if (parrentDiv.classList.contains('image')){
         document.querySelector('.active-image').classList.remove('active-image')
         parrentDiv.classList.add('active-image');
