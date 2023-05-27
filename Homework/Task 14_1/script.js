@@ -48,14 +48,29 @@ document.body.addEventListener('click', (e) => {
 const photo = document.querySelector('.photo > img'),
       imageBtns = document.querySelectorAll('.image');
 
-imageBtns.forEach(item => {
+// без делегирования
+// imageBtns.forEach(item => {
+//     item.addEventListener('click', () => {
+//         document.querySelector('.active-image').classList.remove('active-image')
+//         item.classList.add('active-image');
+//         photo.src = item.firstElementChild.src;
+//     })
+// })
 
-    item.addEventListener('click', () => {
-        imageBtns.forEach(item => item.classList.remove('active-image'))
-        item.classList.add('active-image');
-        photo.src = item.firstElementChild.src;
-    })
+// через делигирование событий
+
+const imageContainer = document.querySelector('.container');
+
+imageContainer.addEventListener('click', (e) => {
+    let parrentDiv = e.target.closest('div')
+    
+    if (parrentDiv.classList.contains('image')){
+        document.querySelector('.active-image').classList.remove('active-image')
+        parrentDiv.classList.add('active-image');
+        photo.src = e.target.src;
+    }
 })
+
 
 // Task 5. Есть список задач для пользователей. Отсортируйте этот список по алфавиту(за сортировку берем имя пользователя).
 
