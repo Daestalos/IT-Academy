@@ -65,9 +65,9 @@ const imageContainer = document.querySelector('.container');
 imageContainer.addEventListener('click', (e) => {
     let parrentDiv = e.target.closest('div')
 
-    if (parrentDiv.classList.contains('image')){
+    if (parentDiv.classList.contains('image')){
         document.querySelector('.active-image').classList.remove('active-image')
-        parrentDiv.classList.add('active-image');
+        parentDiv.classList.add('active-image');
         photo.src = e.target.src;
     }
 })
