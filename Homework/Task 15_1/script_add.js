@@ -129,5 +129,26 @@ var list = [
     },
 ]
 
-let ulMenu = document.querySelector('.menu')
+let ulMenu = document.querySelector('.menu');
+
+function addNewUl(array) {
+    ulMenu.innerHTML = '';
+
+    array.map(item => {
+        if (item.subMenu){
+            let newLi = document.createElement('li'),
+                newUl = document.createElement('ul');
+    
+            newLi.insertAdjacentHTML('beforeend', `<a href="${item.ref}">${item.name}</a>`)
+            newUl.classList.add("sub-menu");
+
+            item.subMenu.map(elem => newUl.insertAdjacentHTML('beforeend', `<li><a href="${elem.ref}">${elem.name}</a></li>`))
+
+            newLi.insertAdjacentElement('beforeend', newUl)
+            ulMenu.insertAdjacentElement('beforeend', newLi);
+        } else ulMenu.insertAdjacentHTML('beforeend', `<li><a href="${item.ref}">${item.name}</a></li>`)
+    })
+}
+
+addNewUl(list);
 
