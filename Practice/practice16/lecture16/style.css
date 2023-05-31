@@ -1,0 +1,112 @@
+.box-content{
+    border: 2px solid red;
+}
+
+.blue{
+ width: 500px;
+ height: 500px;
+ background-color: blue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} 
+
+.yellow{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+/*     position: relative;
+    top: 100px;
+    bottom: 100px;
+    left: 100px; */
+}
+
+.text{
+    border: 5px solid red;
+    width: 100px;
+   /*  position: relative;
+    top: 100px;
+    bottom: 100px;
+    left: 100px; */
+}
+
+
+
+/* #div1 {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    border: 10px solid #000;
+} */
+
+
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#cars{
+    display: flex;
+    justify-content: space-evenly;
+    width: 270px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+#cars li{
+    border: 1px solid #000;
+    margin: 0px;
+}
+
+.active-car{
+    width: 88px;
+    background-image: url(./img/checkmark.png);
+    background-position: 100% 100%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+.yellow_color{
+    border: 10px solid yellow;
+}
+
+
+.green_color{
+    border: 10px solid green;
+}
+
+
+
+
+
+.container1{
+    width: 700px;
+    height: 700px;
+    background: goldenrod;
+}
+
+.container2{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+}
+
+.container3{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+#div1 {
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid #aaaaaa;
+  }
