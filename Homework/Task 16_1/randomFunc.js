@@ -11,7 +11,6 @@ function randomQuestion(qNumber, min, max) {
 
 let qOne = randomQuestion(1, 1, 10),
     qTwo = randomQuestion(2, 11, 20);
-    qThree = randomQuestion(2, 21, 30);
-    qFour = randomQuestion(2, 31, 40);
-    qFive = randomQuestion(2, 41, 50);
-    
+    qThree = randomQuestion(3, 21, 30);
+    qFour = randomQuestion(4, 31, 40);
+    qFive = randomQuestion(5, 41, 50);
