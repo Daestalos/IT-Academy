@@ -51,16 +51,37 @@ allButtons.map(item => {
 
 var allCollection = ['Elem1', 'Hello World!', 'I love JS', 'Simple Element', 'Item 5'];
 
-let collection = document.querySelector('#collection-list');
+let collection = document.querySelector('#collection-list'),
+    currModal = document.querySelector('#modal1'),
+    closeModalBtn = document.querySelector('.modal-close');
+
 collection.innerHTML = ''
 
 allCollection.map(item => {
-    collection.insertAdjacentHTML('beforeend', `<a href="#!" class="collection-item">${item}</a>`)
+    collection.insertAdjacentHTML('beforeend', `<a href="#!" class="collection-item" data-modal>${item}</a>`)
 })
 
+
 collection.addEventListener('click', e => {
+    let currModalText = document.querySelector('.modal-content p')
+
     if (e.target.tagName === 'A'){
-        alert(e.target.innerText)
+        // alert(e.target.innerText)
+        currModal.classList.add('open')
+        currModal.style = "z-index: 1003; display: block; opacity: 1; top: 10%; transform: scaleX(1) scaleY(1);"
+        currModalText.innerText = e.target.innerText
+    }
+})
+
+closeModalBtn.addEventListener('click', () => {
+    currModal.classList.remove('open')
+    currModal.style = ''
+})
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape'){
+        currModal.classList.remove('open')
+        currModal.style = ''
     }
 })
 
