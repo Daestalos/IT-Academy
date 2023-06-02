@@ -126,6 +126,8 @@ currentCartItems.addEventListener('click', (e) => {
         previousInputForPlus = e.target.previousElementSibling,
         nextInputForMinus = e.target.nextElementSibling;
 
+    console.log(currentBtn);
+
     if (currentBtn.btn === 'btn-neg' ) {
         Number(--nextInputForMinus.value)
     }
@@ -138,8 +140,10 @@ totalBtn.addEventListener('click', () => {
     let allInputValue = document.querySelectorAll('#current-cart-items .total'),
         sum = [...allInputValue].reduce((acc, item) => acc + +item.value, 0)
 
-    totalSpan.innerText = sum;
+    totalSpan.textContent = sum;
 })
+
+
 
 
 // Task7. Дано поле ввода(input). Когда пользователь вводит текст, и нажимает клавишу Enter, нужно сделать чтобы введенный текст выводился в новый тег "p" под input, а содержимое input очищалось.

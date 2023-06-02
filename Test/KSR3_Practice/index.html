@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+ 
+<body>
+
+
+
+    <!--Task1-->
+    <pre>Task 1. Вам дана пагинация. При нажатии на стрелочки влево и вправо сделайте так, чтобы активным становился
+        следующий элемент. Например если сейчас активно число 1, то кликнув на правую кнопку становится активным число 2.
+    </pre>
+
+    <ul class="pagination" id="custon-pag">
+        <li class="waves-effect" id="left-arrow"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect" id="right-arrow"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+
+
+    <!--Task2-->
+    <pre>Task2. В файле script.js вам дан массив allButtons. Элементы массива представлены в виде строки. Напишите функцию, которая
+    пробегается по этому массиву через цикл, и создает столько кнопок сколько есть элементов массива, и название для кнопки
+    берите из элемента массива. Можете внутри div id="box-btn" заккоментировать для примера представленные кнопки, и в этом
+    контейнере отрисовать кнопки из данных массива allButtons.</pre>
+
+    <div id="box-btn">
+        <p>Для примера вот здесь отрисуйте кнопки</p>
+
+        <a class="waves-effect waves-light btn">Btn 1</a>
+        <a class="waves-effect waves-light btn">Btn 2</a>
+        <a class="waves-effect waves-light btn">Btn ...</a>
+    </div>
+
+    <!--Task3-->
+    <pre>Task3. В файле script.js вам дан массив allCollection. Элементы массива представлены в виде строки. Напишите функцию, которая
+        пробегается по этому массиву через цикл, и создает столько элементов списка(таблицы) сколько есть элементов массива, и название для элемента таблицы
+        берите из элемента массива. Также при клике на каждый элемент таблицы, создайте модальное окно, которое при клике на элемент таблицы будет выводить текст содердимого(можно в alert).</pre>
+
+
+        <p>Пример того, как будет отрисовываться список элементов таблицы. Заккоментируйте его в HTML, и отрисуйте данные из массива allCollection.</p>
+    <div class="collection" id="collection-list">
+        <a href="#!" class="collection-item">Alvin</a>
+        <a href="#!" class="collection-item">Alvin</a>
+        <a href="#!" class="collection-item">Alvin</a>
+        <a href="#!" class="collection-item">Alvin</a>
+      </div>
+
+    <!--Task4-->
+
+    <pre>Task 4. При нажатии на корзину, должно происходить удаление задачи из списка. Когда не останется задач, вывести текст "Empty to-do".</pre>
+
+    <ul class="collection container">
+        <li class="collection-item avatar">
+            <i class="material-icons circle">folder</i>
+            <span class="title">Title</span>
+            <p>First Line <br>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle">folder</i>
+            <span class="title">Title</span>
+            <p>First Line <br>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Title</span>
+            <p>First Line <br>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle red">play_arrow</i>
+            <span class="title">Title</span>
+            <p>First Line <br>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+        </li>
+    </ul>
+
+    
+
+
+    <!--Task5-->
+
+    <pre>Task 5. Напишите скрипт, который при клике на ячейку с текстом "red" выделит красным цветом данную ячейку . Ячейки, которые имеют надпись "blue" при клике меняют цвет на синий.(Используйте делегирование)</pre>
+
+    <div class="container1">
+        <div></div>
+        <div></div>
+        <div>blue</div>
+        <div></div>
+        <div>red</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>red</div>
+        <div></div>
+        <div>blue</div>
+        <div></div>
+        <div>red</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>red</div>
+        <div></div>
+        <div>blue</div>
+        <div></div>
+        <div>red</div>
+        <div></div>
+        <div></div>
+        <div>blue</div>
+        <div></div>
+    </div>
+
+    <!--Task6-->
+
+    <pre>Task 6. Дан селект. По изменению селекта выведите картинку, информация о годе(год 
+        Год основания, победитель лиги чемпионов...) выбранного пункта. Обратите внимание, если некоторой информации нет (например команда не имеет кубков лиги европы) тогда вывести сообщение "На данный момент нет кубков". Данные берем из массива infoList.
+    </pre>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="input-field col s3">
+                <label>Выберите футбольную команду</label>
+                <select class="browser-default">
+                    <option value="1">Манчестер Юнайтед</option>
+                    <option value="2">Барселона</option>
+                    <option value="3">ПСЖ</option>
+                    <option value="4">Ювентус</option>
+                    <option value="5">Бавария</option>
+                </select>
+            </div>
+            <div class="club-image col s3">
+                <img src="./images/footbal/manchester.png">
+            </div>
+            <div class="club-label col s3">
+                <h5>Год основания</h5>
+                <h5>Победитель лиги чемпионов</h5>
+                <h5>Победитель лиги европы</h5>
+            </div>
+            <div class="club-info col s3">
+                <h5>1878</h5>
+                <h5>1968, 1999, 2008</h5>
+                <h5>2017</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Task7-->
+
+    <pre>Task 7. Есть список людей. Отсортируйте этот список по возрасту(за сортировку берем число, начиная с младшего до старшего). При клике на кнопку выполнить сортировку.  
+    </pre>
+
+
+    <a class="waves-effect waves-light btn" data-sort>Сортировать по возрасту</a>
+
+    <div class="container">
+        <div class="row">
+            <table id="grid" class="col s6">
+                <thead>
+                    <tr>
+                        <th data-type="number">Возраст</th>
+                        <th data-type="string">Имя</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>Аня</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Петя</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Женя</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Маша</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Игорь</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+        <!--Task8-->
+
+    <pre>Task 8. Есть input, который является поисковиком. Вам необходимо реализовать живой поиск, чтобы при вводе любого символа в input происходило изменение
+        списка ниже товаров(мягких игрушек), если в них присутствуют совпадения по первым символам(тогда отображаем эти товары, остальные скрываем). Для удобства, используйте массив searchList.
+    </pre>
+
+    <div class="container">
+        <div class="row">
+            <input type="search" placeholder="Введите имя игрушки">
+
+            <ul id="list">
+                <li>Мишка</li>
+                <li>Осьминожка</li>
+                <li>Акула</li>
+                <li>Авокадо</li>
+                <li>Моль Молли</li>
+                <li>Альпака</li>
+                <li>Пингвиненок</li>
+                <li>Моль</li>
+                <li>Пачакун</li>
+                <li>Ленивец</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
