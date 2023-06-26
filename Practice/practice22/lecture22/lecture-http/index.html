@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="./materialize.min.css">
+</head>
+
+<body> 
+    <h1>Методы GET, POST, PUT, DELETE</h1>
+
+    <input type="text" id="fName" name="fName" placeholder="Input name">
+   <!--  <input type="text" id="age" name="age" placeholder="Input age"> -->
+
+    <button id="get_data">получить данные</button>
+    <button id="post_data">отправить данные</button>
+    <button id="put_data">редактирование данных(PUT)</button>
+    <button id="patch_data">редактирование данных(PATCH)</button>
+    <button id="delete_data">Удаление данных(DELETE)</button>
+ 
+    <ul>
+        <li data-id="1">Profile1<a class="edit_info" href="#"> Edit</a><a class="delete_info" href="#"> Delete</a></li>
+        <li data-id="2">Profile2<a class="edit_info" href="#"> Edit</a><a class="delete_info" href="#"> Delete</a></li>
+        <li data-id="3">Profile3<a class="edit_info" href="#"> Edit</a><a class="delete_info" href="#"> Delete</a></li>
+        <li data-id="4">Profile4<a class="edit_info" href="#"> Edit</a><a class="delete_info" href="#"> Delete</a></li>
+        <li data-id="5">Profile5<a class="edit_info" href="#"> Edit</a><a class="delete_info" href="#"> Delete</a></li>
+    </ul>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
